@@ -1,9 +1,7 @@
 package com.example.sawaari;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -13,6 +11,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import com.example.sawaari.Frags.Location_Selection.LocationSelector;
+import com.example.sawaari.Frags.Location_Selection.Personal_Detail.PersonalDetailsActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -75,9 +75,18 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
+            Intent intent = new Intent(MainActivity.this, LocationSelector.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_slideshow) {
 
+            Intent intent = new Intent(MainActivity.this, PersonalDetailsActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_tools) {
+
+            Intent intent = new Intent(MainActivity.this, Sawaari_Selection_Activity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
