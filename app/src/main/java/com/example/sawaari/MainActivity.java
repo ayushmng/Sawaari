@@ -89,8 +89,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_share) {
-
-            // Added this comment
+            
 
         } else if (id == R.id.nav_send) {
 
